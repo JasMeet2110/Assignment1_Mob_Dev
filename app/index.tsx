@@ -49,6 +49,38 @@ export default function Index() {
         <View style={styles.allTab}>
           <Text>All</Text>
         </View>
+        <View style={styles.musicTab}>
+          <Text>Music</Text>
+        </View>
+        <View style={styles.podcastsTab}>
+          <Text>Podcasts</Text>
+        </View>
+        <View style={styles.newsTab}>
+          <Text>News</Text>
+        </View>
+      </View>
+
+      {/*VIDEOS*/}
+      <View>
+        <Image
+          source={{
+            uri: "https://wallpaperaccess.com/full/682452.jpg",
+          }}
+          style={styles.videoThumbNail}
+        />
+      </View>
+      <View style={styles.videoInfoContainer}>
+        <View>
+          <Image
+            source={{
+              uri: "https://wallpaperaccess.com/full/2416486.jpg",
+            }}
+            style={styles.videoAccountIcon}
+          />
+        </View>
+        <View>
+          <Text>Chill Relaxing Music - Driving Through Nature</Text>
+        </View>
       </View>
     </View>
   );
@@ -104,18 +136,58 @@ const styles = StyleSheet.create({
 
   tabsContainer: {
     flexDirection: "row",
+    justifyContent: "space-between",
   },
 
   navigationTab: {
     width: 25,
     height: 25,
+    backgroundColor: "lightgrey",
+    borderRadius: 5,
+    justifyContent: "center",
+    alignItems: "center",
   },
 
   allTab: {
     backgroundColor: "lightgrey",
-    width: 30,
     borderRadius: 5,
     justifyContent: "center",
     alignItems: "center",
+  },
+
+  musicTab: {
+    backgroundColor: "lightgrey",
+    borderRadius: 5,
+    justifyContent: "center",
+    alignItems: "center",
+  },
+
+  podcastsTab: {
+    backgroundColor: "lightgrey",
+    borderRadius: 5,
+    justifyContent: "center",
+    alignItems: "center",
+  },
+
+  newsTab: {
+    backgroundColor: "lightgrey",
+    borderRadius: 5,
+    justifyContent: "center",
+    alignItems: "center",
+  },
+
+  videoThumbNail: {
+    width: "auto",
+    height: 250,
+  },
+
+  videoInfoContainer: {
+    flexDirection: "row",
+  },
+
+  videoAccountIcon: {
+    width: 40,
+    height: 40,
+    borderRadius: 40,
   },
 });
