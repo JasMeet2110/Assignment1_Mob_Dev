@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import {
   StyleSheet,
   Text,
@@ -9,6 +10,9 @@ import {
   ScrollView,
   FlatList,
 } from "react-native";
+=======
+import { StyleSheet, Text, View, Image } from "react-native";
+>>>>>>> aedfadeb3a6c0f4cf8b4a43f3355555edd492049
 import React from "react";
 
 // Create Mock Data for Main Page
@@ -71,6 +75,7 @@ const posts = [
 
 const MainPage = () => {
   return (
+<<<<<<< HEAD
     <SafeAreaView style={styles.container}>
       <View style={styles.header}>
         <Image
@@ -230,3 +235,193 @@ const styles = StyleSheet.create({
         fontWeight: "bold",
     },
 });
+=======
+    <View style={styles.background}>
+      {/*HEADER*/}
+      <View style={styles.header}>
+        <View style={styles.leftSideHeader}>
+          <Image
+            source={{
+              uri: "https://www.interstellarrift.com/wiki/images/d/d8/Youtube-logo-png-photo-0.png",
+            }}
+            style={styles.logo}
+          />
+          <Text style={styles.text}>YouTube</Text>
+        </View>
+
+        <View style={styles.rightSideHeader}>
+          <Image
+            source={{
+              uri: "https://icon-library.com/images/display-icon/display-icon-19.jpg",
+            }}
+            style={styles.airplayIcon}
+          />
+          <Image
+            source={{
+              uri: "https://th.bing.com/th/id/R.13bc99d70664f0bac01cdb924ba08d3c?rik=DL1npswdF%2fmO8w&pid=ImgRaw&r=0",
+            }}
+            style={styles.notificationBellIcon}
+          />
+          <Image
+            source={{
+              uri: "https://icon-library.com/images/ios-search-icon/ios-search-icon-23.jpg",
+            }}
+            style={styles.searchIcon}
+          />
+        </View>
+      </View>
+
+      {/*TABS*/}
+      <View style={styles.tabsContainer}>
+        <Image
+          source={{
+            uri: "https://th.bing.com/th/id/R.ec0fbeda30ff1549bf47f7f27337b036?rik=dMgk2AWW9mxQsA&riu=http%3a%2f%2fwww.freeiconspng.com%2fuploads%2fcompass-icon-5.png&ehk=qSTuFj3PsyFFkaUoB9qYqBxc1p%2fnB04lxZzTqM7U0Ig%3d&risl=&pid=ImgRaw&r=0",
+          }}
+          style={styles.navigationTab}
+        />
+        <View style={styles.allTab}>
+          <Text>All</Text>
+        </View>
+        <View style={styles.musicTab}>
+          <Text>Music</Text>
+        </View>
+        <View style={styles.podcastsTab}>
+          <Text>Podcasts</Text>
+        </View>
+        <View style={styles.newsTab}>
+          <Text>News</Text>
+        </View>
+      </View>
+
+      {/*VIDEOS*/}
+      <View>
+        <Image
+          source={{
+            uri: "https://wallpaperaccess.com/full/682452.jpg",
+          }}
+          style={styles.videoThumbNail}
+        />
+      </View>
+      <View style={styles.videoInfoContainer}>
+        <View>
+          <Image
+            source={{
+              uri: "https://wallpaperaccess.com/full/2416486.jpg",
+            }}
+            style={styles.videoAccountIcon}
+          />
+        </View>
+        <View>
+          <Text>Chill Relaxing Music - Driving Through Nature</Text>
+        </View>
+      </View>
+    </View>
+  );
+}
+
+const styles = StyleSheet.create({
+  background: {
+    backgroundColor: "white",
+    flex: 1,
+  },
+
+  header: {
+    width: "100%",
+    flexDirection: "row",
+    alignItems: "center",
+    gap: 100,
+  },
+
+  leftSideHeader: {
+    flexDirection: "row",
+    gap: 10,
+  },
+  rightSideHeader: {
+    flexDirection: "row",
+  },
+
+  logo: {
+    width: 70,
+    height: 30,
+    padding: 3,
+  },
+
+  text: {
+    fontSize: 20,
+    fontWeight: "semibold",
+    color: "black",
+  },
+
+  airplayIcon: {
+    width: 30,
+    height: 25,
+  },
+
+  notificationBellIcon: {
+    width: 20,
+    height: 25,
+  },
+
+  searchIcon: {
+    width: 20,
+    height: 25,
+  },
+
+  tabsContainer: {
+    flexDirection: "row",
+    justifyContent: "space-between",
+  },
+
+  navigationTab: {
+    width: 25,
+    height: 25,
+    backgroundColor: "lightgrey",
+    borderRadius: 5,
+    justifyContent: "center",
+    alignItems: "center",
+  },
+
+  allTab: {
+    backgroundColor: "lightgrey",
+    borderRadius: 5,
+    justifyContent: "center",
+    alignItems: "center",
+  },
+
+  musicTab: {
+    backgroundColor: "lightgrey",
+    borderRadius: 5,
+    justifyContent: "center",
+    alignItems: "center",
+  },
+
+  podcastsTab: {
+    backgroundColor: "lightgrey",
+    borderRadius: 5,
+    justifyContent: "center",
+    alignItems: "center",
+  },
+
+  newsTab: {
+    backgroundColor: "lightgrey",
+    borderRadius: 5,
+    justifyContent: "center",
+    alignItems: "center",
+  },
+
+  videoThumbNail: {
+    width: "auto",
+    height: 250,
+  },
+
+  videoInfoContainer: {
+    flexDirection: "row",
+  },
+
+  videoAccountIcon: {
+    width: 40,
+    height: 40,
+    borderRadius: 40,
+  },
+});
+>>>>>>> aedfadeb3a6c0f4cf8b4a43f3355555edd492049
